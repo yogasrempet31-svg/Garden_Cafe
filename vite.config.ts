@@ -12,4 +12,6 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Build the SSR server as a Netlify Function (Lovable's sandbox still forces its own preset).
+  nitro: { preset: "netlify" },
 });
